@@ -1,17 +1,20 @@
 {
-  "name": "app",
+  "name": "ortega-open-music",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web de la Asociación Open Music - CEIP Ortega y Gasset, Almendralejo",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["musical", "teatro", "extremadura", "almendralejo"],
+  "author": "Asociación Open Music - CEIP Ortega y Gasset",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.18.2"
   }
 }
