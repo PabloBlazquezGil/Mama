@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>News &amp; Events - Ortega Open Music</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fcf9f8",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#4f3e00",
+                    "on-secondary-fixed": "#001b3b",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#eae7e7",
+                    "background": "#fcf9f8",
+                    "primary-container": "#9e090b",
+                    "surface": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-variant": "#e5e2e1",
+                    "primary-fixed": "#ffdad5",
+                    "inverse-primary": "#ffb4aa",
+                    "primary": "#750003",
+                    "secondary-container": "#8ab8ff",
+                    "outline-variant": "#e3beb9",
+                    "secondary": "#2c5fa0",
+                    "on-background": "#1c1b1b",
+                    "tertiary-fixed": "#ffe088",
+                    "on-primary-fixed-variant": "#930006",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-container": "#ffa89d",
+                    "secondary-fixed": "#d5e3ff",
+                    "inverse-surface": "#313030",
+                    "on-surface": "#1c1b1b",
+                    "on-error-container": "#93000a",
+                    "outline": "#8f706b",
+                    "on-secondary-container": "#054787",
+                    "on-surface-variant": "#5b403d",
+                    "on-secondary-fixed-variant": "#044787",
+                    "surface-tint": "#b7211b",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "surface-container-low": "#f6f3f2",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f3f0ef",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "tertiary": "#735c00",
+                    "secondary-fixed-dim": "#a7c8ff",
+                    "tertiary-container": "#cca730",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-container": "#f0eded",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#410001"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif", "serif"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans", "sans-serif"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans", "sans-serif"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcf9f8; color: #1c1b1b; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Noto Serif', serif; }
+        .glass-panel { background: rgba(229, 226, 225, 0.7); backdrop-filter: blur(20px); }
+        .gradient-text { background: linear-gradient(90deg, #750003 0%, #9e090b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .ambient-shadow { box-shadow: 0 10px 32px 6px rgba(28, 27, 27, 0.06); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface pt-24 min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white/70 dark:bg-stone-950/70 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm dark:shadow-none transition-all">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="font-serif text-2xl font-bold tracking-tighter text-[#750003] dark:text-[#fcf9f8]" href="#">
+                Ortega Open Music
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors hover:text-[#735c00] transition-all duration-300 font-sans tracking-tight" href="#">Musicals</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors hover:text-[#735c00] transition-all duration-300 font-sans tracking-tight" href="#">Rehearsals</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors hover:text-[#735c00] transition-all duration-300 font-sans tracking-tight" href="#">Community</a>
+<a class="text-[#750003] dark:text-[#9e090b] border-b-2 border-[#735c00] pb-1 font-semibold hover:text-[#735c00] transition-all duration-300 font-sans tracking-tight" href="#">News</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors hover:text-[#735c00] transition-all duration-300 font-sans tracking-tight" href="#">Tickets</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md hover:bg-primary-container transition-colors duration-300 font-medium">
+                Support Us
+            </button>
+</div>
+<div class="h-0.5 w-full bg-surface-container-low border-0"></div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 md:px-12 py-12 flex flex-col gap-16">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden min-h-[409px] flex items-end p-8 md:p-16" data-alt="vibrant theatrical stage lighting with empty audience seats in a grand classical theater hall, warm golden hour mood" style="background-image: linear-gradient(to top, rgba(28,27,27,0.8) 0%, rgba(28,27,27,0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgD23P8KK1QcM5O0sgpILlXbtRlpYl_UNJKuKfr4tJu4kkHqYmdFCTkq8kXb9PwbhbP5OtL72Q-veHXCxS7cbdIWXzq0Y8dKNyQceXzodeSH9RhTtOQNVs0Que0U41rsktSyaQsgblRbdAtg1kQJ9vuHl1zGKGuOlgcIozab7b0EXUFhkYGx4LGozlihjaEAJuXOHFGAjw_DcR3QoH_IBuP7UcpTKw0OA3SRrHo4FsJcpvmTTR-4yTnM_Hp58Da67BHGI6xBLAS-0'); background-size: cover; background-position: center;">
+<div class="relative z-10 max-w-3xl">
+<span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider uppercase bg-surface-container-low text-primary rounded-full backdrop-blur-sm">The Latest</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-4">News &amp; Announcements</h1>
+<p class="font-body text-xl text-surface-container-low max-w-2xl">Updates, schedules, and stories from behind the curtain of the Digital Proscenium.</p>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Feed Section (Left Column) -->
+<section class="lg:col-span-8 flex flex-col gap-8">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-headline text-3xl font-bold text-primary">Recent Articles</h2>
+<a class="font-body text-sm font-semibold text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Featured Article -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row transition-transform hover:-translate-y-1 duration-300">
+<div class="md:w-2/5 h-64 md:h-auto bg-cover bg-center" data-alt="close up of a vintage wooden violin and sheet music resting on a dark velvet surface, moody dramatic lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC36fbgfSQfCrqBMYJobJyXZqK41Sgo-QF9e4h2SmjwzMVlqTjhNR8eS85GJbhXKAUICszZv-g56BvqPKcJgYjNYaZSZc_HD3tqp-X8tk54fgr4QWI9u3--oe9WvCTxcBIuamQBN4225PlMDNFoZjtjZqWt9MFox9eFiqNIXYliG3y2bfiV_1sLhBlH3eqpAp7oB0N7fkjxI9oJ8mo6CF_nd6QIvE9mxTpwRXWL6u1ZKg-vE7_uhu5Ax_1VaGYM5eAeG6mA6b8nb4');"></div>
+<div class="p-8 md:w-3/5 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-4">
+<span class="text-xs font-semibold px-2 py-1 bg-secondary-fixed-dim text-on-secondary-fixed rounded-md">Feature</span>
+<span class="text-sm text-on-surface-variant font-body">Oct 24, 2024</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3 text-on-surface hover:text-primary transition-colors"><a href="#">String Section Auditions Open for Winter Gala</a></h3>
+<p class="font-body text-on-surface-variant mb-6 line-clamp-3">Prepare your concertos. We are expanding our ensemble for the upcoming seasonal performance. Find repertoire requirements and sign-up slots here.</p>
+<a class="font-body font-semibold text-primary hover:text-primary-container transition-colors mt-auto inline-flex items-center gap-1" href="#">Read Full Story <span class="material-symbols-outlined text-sm">chevron_right</span></a>
+</div>
+</article>
+<!-- List Articles -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<article class="bg-surface-container-low p-6 rounded-xl flex flex-col group hover:bg-surface-container-highest transition-colors">
+<span class="text-sm text-tertiary font-semibold mb-2 font-body flex items-center gap-2"><span class="material-symbols-outlined text-base">campaign</span>Announcement</span>
+<h4 class="font-headline text-xl font-bold mb-3 text-on-surface group-hover:text-primary transition-colors"><a href="#">New Rehearsal Space Secured in Downtown</a></h4>
+<p class="font-body text-sm text-on-surface-variant mb-4">Starting next month, full cast run-throughs will be held at the historic Lyric Hall.</p>
+<span class="text-xs text-on-surface-variant font-body mt-auto">Oct 20, 2024</span>
+</article>
+<article class="bg-surface-container-low p-6 rounded-xl flex flex-col group hover:bg-surface-container-highest transition-colors">
+<span class="text-sm text-secondary font-semibold mb-2 font-body flex items-center gap-2"><span class="material-symbols-outlined text-base">article</span>Review</span>
+<h4 class="font-headline text-xl font-bold mb-3 text-on-surface group-hover:text-primary transition-colors"><a href="#">"A Midsummer Night's Dream" Closes to Standing Ovations</a></h4>
+<p class="font-body text-sm text-on-surface-variant mb-4">Read the critical reception and see gallery photos from our latest production.</p>
+<span class="text-xs text-on-surface-variant font-body mt-auto">Oct 18, 2024</span>
+</article>
+</div>
+</section>
+<!-- Calendar Section (Right Column) -->
+<aside class="lg:col-span-4 bg-surface-container-low rounded-xl p-6 md:p-8 flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10"></div>
+<h2 class="font-headline text-2xl font-bold text-primary mb-6 flex items-center gap-2 border-b-2 border-tertiary pb-2 inline-block w-max">
+<span class="material-symbols-outlined" data-weight="fill">calendar_month</span> Upcoming Events
+                </h2>
+<div class="flex flex-col gap-6">
+<!-- Event Item -->
+<div class="flex gap-4 relative">
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest rounded-lg min-w-[3.5rem] h-14 shadow-sm">
+<span class="text-xs font-bold text-primary uppercase leading-none mt-1">Nov</span>
+<span class="text-xl font-bold text-on-surface leading-none mb-1">02</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline font-bold text-on-surface leading-tight">Tech Rehearsal: Act 1</h4>
+<p class="font-body text-sm text-on-surface-variant">6:00 PM • Main Stage</p>
+</div>
+</div>
+<!-- Event Item -->
+<div class="flex gap-4 relative">
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest rounded-lg min-w-[3.5rem] h-14 shadow-sm">
+<span class="text-xs font-bold text-primary uppercase leading-none mt-1">Nov</span>
+<span class="text-xl font-bold text-on-surface leading-none mb-1">05</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline font-bold text-on-surface leading-tight">Vocal Ensemble Practice</h4>
+<p class="font-body text-sm text-on-surface-variant">7:30 PM • Room B</p>
+</div>
+</div>
+<!-- Event Item (Highlighted) -->
+<div class="flex gap-4 relative bg-primary-container/10 p-3 -mx-3 rounded-lg border border-primary-container/20">
+<div class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-lg min-w-[3.5rem] h-14 shadow-sm">
+<span class="text-xs font-bold uppercase leading-none mt-1">Nov</span>
+<span class="text-xl font-bold leading-none mb-1">12</span>
+</div>
+<div class="flex flex-col justify-center">
+<span class="text-xs font-bold text-primary mb-1">OPENING NIGHT</span>
+<h4 class="font-headline font-bold text-on-surface leading-tight">The Autumn Sonata</h4>
+<p class="font-body text-sm text-on-surface-variant">8:00 PM • Grand Theater</p>
+</div>
+</div>
+</div>
+<button class="mt-8 w-full bg-secondary text-on-secondary py-3 rounded-md font-body font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+                    Full Calendar
+                </button>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto border-t border-stone-200 dark:border-stone-800">
+<div class="font-serif text-lg font-semibold text-[#750003]">
+                Ortega Open Music
+            </div>
+<div class="flex flex-wrap justify-center gap-6 font-sans text-sm tracking-wide">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Terms of Service</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Backstage Access</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Press Kit</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Contact Us</a>
+</div>
+<div class="font-sans text-sm tracking-wide text-[#750003] dark:text-[#9e090b]">
+                © 2024 Ortega Open Music. The Digital Proscenium.
+            </div>
+</div>
+</footer>
+</body></html>

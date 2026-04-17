@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tarzán - Ortega Open Music</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#410001",
+                        "on-surface": "#1c1b1b",
+                        "secondary-container": "#8ab8ff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-tint": "#b7211b",
+                        "on-secondary-fixed": "#001b3b",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary": "#2c5fa0",
+                        "on-secondary-container": "#054787",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "outline": "#8f706b",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#930006",
+                        "surface": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#735c00",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "inverse-primary": "#ffb4aa",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#4f3e00",
+                        "secondary-fixed": "#d5e3ff",
+                        "surface-bright": "#fcf9f8",
+                        "primary-container": "#9e090b",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-surface-variant": "#5b403d",
+                        "primary": "#750003",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed": "#ffdad5",
+                        "inverse-surface": "#313030",
+                        "on-primary-container": "#ffa89d",
+                        "outline-variant": "#e3beb9",
+                        "on-secondary-fixed-variant": "#044787",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container": "#f0eded",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#cca730"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            font-family: theme('fontFamily.body');
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: theme('fontFamily.headline');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md shadow-sm dark:shadow-none tonal-shift-bg no-border">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="font-serif text-2xl font-bold italic text-red-900 dark:text-red-100 text-primary hover:text-red-700 transition-colors" href="#">
+                Ortega Open Music
+            </a>
+<div class="hidden md:flex items-center gap-8 font-serif text-lg tracking-tight">
+<a class="text-red-900 dark:text-red-400 border-b-2 border-red-900 pb-1 hover:text-red-700 transition-colors" href="#">Productions</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Rehearsals</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Tickets</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary rounded-md px-6 py-2 hover:bg-primary-container transition-colors font-label font-medium scale-95 active">
+                    Support Us
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 mt-20 md:mt-24 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-8">
+<!-- SideNavBar (Shared Component) -->
+<aside class="hidden md:flex flex-col h-full py-6 w-64 shrink-0 bg-surface-container-low rounded-xl sticky top-28 h-[calc(100vh-8rem)] overflow-y-auto shadow-[0_4px_32px_rgba(28,27,27,0.06)]">
+<div class="px-6 mb-8">
+<img alt="Production Icon" class="w-16 h-16 rounded-full object-cover mb-4 border-2 border-primary/20" data-alt="Close up of a theatrical playbill featuring lush jungle greenery and a subtle spotlight illuminating the title Tarzan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQGTuUu8Cmy1Fq4oOJx8fJZaYVcrAcYvKCqvXcZg4Mo12OgjKFOiSPp1bULuHvZ0rgVItkifF_jZtctiLKyFHRGk3oLbH0FtiJlyAhZIqBjAFvfvN3fni1MuQCP5SrA3UEW8t0CktRyKk8dWM1XJL7NDs3s9rAO7KgU4Xdy2NcZ_KWnCYw4zj3E57pIcE_cLjR6L62f5ENF3MNd62qFUtjPKavzPfnoxkF5ko8-Id2f4XKlr3rBL-D1OZ7j6XEjsKmy3Vfob5QOoQ"/>
+<h3 class="font-serif font-bold text-red-900 text-xl">Current Playbill</h3>
+<p class="font-sans text-sm text-zinc-500">Digital Proscenium</p>
+</div>
+<nav class="flex flex-col gap-2 px-4 font-sans text-sm">
+<a class="flex items-center gap-3 px-4 py-3 bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-100 font-semibold rounded-lg transition-all duration-300" href="#synopsis">
+<span class="material-symbols-outlined">menu_book</span>
+                    Synopsis
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-all duration-300" href="#cast">
+<span class="material-symbols-outlined">groups</span>
+                    Cast &amp; Crew
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-all duration-300" href="#bts">
+<span class="material-symbols-outlined">theater_comedy</span>
+                    Behind the Scenes
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-all duration-300" href="#gallery">
+<span class="material-symbols-outlined">photo_library</span>
+                    Gallery
+                </a>
+</nav>
+</aside>
+<!-- Canvas -->
+<div class="flex-1 flex flex-col gap-12">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[400px] rounded-2xl overflow-hidden shadow-[0_4px_32px_rgba(28,27,27,0.06)] bg-surface-container-low">
+<img alt="Tarzán Hero" class="absolute inset-0 w-full h-full object-cover" data-alt="Cinematic shot of a stage set designed as a lush, dense jungle with dramatic overhead lighting and a figure swinging on a vine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQM7UZiT9O9Y2F1F-6YnYgk1cmOjuAGv3S-m_ZLN6zMBsVg1zlykua3pUFJih3fvcYaeUSEw3uT-CKE4_uceF3SCMGYAa4B9b2upic4aMVQj2MOI5gzuI8-gOQK-On6bYNA7jtoMH6oAlJUq_I7XITy6kTlElwz5JvMgtyvCST_-Byi1SsV_izyvqzlFZO0ypbVkndIbr4TiHb05S4TUlSXSrwBPE8Ir2drJOztttLLJhUFi9y69kVScO12TPHdyGCP3FRggzf_Cw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 text-on-primary max-w-2xl">
+<span class="inline-block px-3 py-1 bg-tertiary text-on-tertiary text-xs font-bold uppercase tracking-widest rounded-full mb-4">2022 Season</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight drop-shadow-lg">Tarzán</h1>
+<p class="font-body text-lg md:text-xl text-primary-fixed opacity-90">A breathtaking journey into the heart of the jungle.</p>
+</div>
+</section>
+<!-- Synopsis Section -->
+<section class="p-8 md:p-12 bg-surface-container-lowest rounded-2xl shadow-[0_4px_32px_rgba(28,27,27,0.06)]" id="synopsis">
+<div class="max-w-3xl">
+<h2 class="font-headline text-3xl text-primary mb-6">The Story</h2>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                        Our production brought the wild to life with innovative staging, soaring aerial choreography, and the unforgettable rhythms of Phil Collins. Experience the magic of the jungle on our digital proscenium, where every vine swing and drum beat echoes the spirit of adventure.
+                    </p>
+</div>
+</section>
+<!-- Cast & Crew (Bento Grid) -->
+<section class="flex flex-col gap-6" id="cast">
+<h2 class="font-headline text-3xl text-primary px-4">Cast &amp; Crew</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Featured Actor -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-2xl p-6 shadow-[0_4px_32px_rgba(28,27,27,0.06)] flex flex-col sm:flex-row gap-6 items-center">
+<img alt="Lead Actor" class="w-32 h-32 rounded-full object-cover border-4 border-surface-container" data-alt="Headshot of a young male stage actor with intense expression, warm theatrical lighting, dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT10R3ZyP2vkDi2otyb8ehyVSTz863IAAnIV1TzTgiokiW44bckMQMHfBzTQULWWyEbv4Vllx-MnvyDwPuFBdsQ9zKZq7t17DCumBoLEfkOUyomLSLiHR76_zjUhVyJHAHChz0hArgLFnPeFtfPbrM-Gi2DBueuo0zc96zIcgbz6q1Nl5vi7_vAtNO8MtDKc9_gqr6wkPo5JWMJY8o0Iu_GU3UHzhmayDaWjP8mwhcB7DAzQbFUmSttPOm8ha505BVDsMjBaLgfec"/>
+<div>
+<span class="inline-block px-2 py-1 bg-secondary-fixed-dim text-on-secondary-fixed text-xs font-semibold rounded mb-2">Lead - Tarzán</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Alex Mercer</h3>
+<p class="font-body text-on-surface-variant text-sm">Alex's dedication to aerial training brought an unparalleled authenticity to the role.</p>
+</div>
+</div>
+<!-- Ensemble Card -->
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col justify-center border border-outline-variant/15">
+<h4 class="font-headline text-xl text-primary mb-3">The Ensemble</h4>
+<p class="font-body text-sm text-on-surface-variant mb-4">A chorus of 40 students creating the living, breathing jungle.</p>
+<div class="flex -space-x-4">
+<div class="w-10 h-10 rounded-full bg-surface-dim border-2 border-surface flex items-center justify-center text-xs font-bold">+40</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Behind the Scenes (Asymmetric Layout) -->
+<section class="py-12 bg-surface-container-low rounded-3xl -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 shadow-[inset_0_4px_32px_rgba(0,0,0,0.02)]" id="bts">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2 space-y-6 relative">
+<!-- Decorative element -->
+<div class="absolute -top-6 -left-6 w-24 h-24 bg-tertiary-fixed-dim rounded-full mix-blend-multiply opacity-50 blur-xl"></div>
+<img alt="Behind the Scenes" class="w-full h-auto rounded-2xl shadow-[0_4px_32px_rgba(28,27,27,0.06)] relative z-10 border-4 border-surface-container-lowest" data-alt="Candid shot backstage showing crew members adjusting complex rigging and vines for the jungle set, dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWbosQOOqfTYk1wXW9DNHNmU9wxNvOsy2TukyBv_wfjWc_o0PCD7qM0SOxFvG6Sk2H7YgkvcTJOnz344_DnRHux13UTjHT-Dm-LFkDr74wFxy3f8eLi_vllCoA1nOB4td0vMgl-dGxSv2Dob2ngthHLTjuwZWRwZ3nfY99VtzfNA041ISPbvrzqu_roDUPmk3prgaziFsL5pgJn_hPWJBbmu5zRC2_dJ3-jbhPf5DmNa46Zqt3lgIxnJHo4sMZhEFuhHA_-iC4Fxk"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-4xl text-primary mb-6">Building the Jungle</h2>
+<p class="font-body text-lg text-on-surface mb-6 leading-relaxed">
+                            It took three months, 500 yards of fabric, and countless hours from our dedicated parent-student technical team to construct the immersive environment.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-1">check_circle</span>
+<span class="font-body text-on-surface-variant">Custom-engineered aerial rigging systems.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-1">check_circle</span>
+<span class="font-body text-on-surface-variant">Hand-painted canvas drops mimicking dense foliage.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-12 mt-auto bg-zinc-100 dark:bg-zinc-950 tonal-shift flex flex-col md:flex-row justify-between items-center px-12 border-t border-zinc-200/50">
+<div class="flex flex-col items-center md:items-start gap-4 mb-6 md:mb-0">
+<div class="font-serif text-xl text-red-900">
+                Ortega Open Music
+            </div>
+<p class="font-sans text-xs uppercase tracking-widest text-zinc-500">
+                © 2024 Ortega Open Music Association. The Stage is Set.
+            </p>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 font-sans text-xs uppercase tracking-widest">
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Press Kit</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100" href="#">Contact</a>
+</nav>
+</footer>
+</body></html>

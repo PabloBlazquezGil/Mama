@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nuestras Obras - Ortega Open Music</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-secondary-fixed": "#001b3b",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "primary-container": "#9e090b",
+                        "surface": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed": "#ffdad5",
+                        "inverse-primary": "#ffb4aa",
+                        "primary": "#750003",
+                        "secondary-container": "#8ab8ff",
+                        "outline-variant": "#e3beb9",
+                        "secondary": "#2c5fa0",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed": "#ffe088",
+                        "on-primary-fixed-variant": "#930006",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-primary-container": "#ffa89d",
+                        "secondary-fixed": "#d5e3ff",
+                        "inverse-surface": "#313030",
+                        "on-surface": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "outline": "#8f706b",
+                        "on-secondary-container": "#054787",
+                        "on-surface-variant": "#5b403d",
+                        "on-secondary-fixed-variant": "#044787",
+                        "surface-tint": "#b7211b",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "tertiary": "#735c00",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "tertiary-container": "#cca730",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container": "#f0eded",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#410001"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9f8;
+            color: #1c1b1b;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-950/70 backdrop-blur-md shadow-sm dark:shadow-none bg-surface-container-low">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-serif text-2xl font-bold tracking-tighter text-[#750003] dark:text-[#fcf9f8]">
+                Ortega Open Music
+            </div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-[#750003] dark:text-[#9e090b] border-b-2 border-[#735c00] pb-1 font-semibold font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="#">Musicals</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="#">Rehearsals</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="#">Community</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="#">News</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="#">Tickets</a>
+</nav>
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary rounded-md px-6 py-2 font-label text-sm hover:bg-primary-container transition-colors">
+                    Support Us
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-28 pb-16 px-4 md:px-8 max-w-7xl mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-16 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-12 bg-surface-container-low p-8 lg:p-16 rounded-xl">
+<div class="lg:w-1/2">
+<h1 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">Nuestras Obras</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Step onto the digital stage and explore the visual legacy of our past productions. From the heart of the jungle to the heights of Neverland, witness the passion and dedication of the Ortega Open Music ensemble.
+                </p>
+</div>
+<div class="lg:w-1/2 w-full h-64 lg:h-96 rounded-xl overflow-hidden shadow-lg relative bg-surface-container-highest">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/80 to-transparent z-10"></div>
+<img alt="Theatrical Stage" class="w-full h-full object-cover" data-alt="Dramatic theatrical stage lighting with empty stage ready for performance, moody atmosphere with deep reds and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPaQK2NixmvfNTkYXDQfCO_IFSowT5oKuzGWggUSOSvOyEyHKgKx-Yd6ObBeEU1QneSPajSAdtnh2m_lzCBqSuIMqp4RBvqcXVJUAT7-LkDhRxJ1ixzDQ99-VhebUAd94vtfkPzkliVcyKUlRtXs4crU1sobqt9MAk6MfBLw-NLUPUAi-J26AMryhijP14N9ftmEVaDru4WIeOhfz2llzSU2bXrgRbDSw6K8hh_z-bRgriz4Ev0QFR7hU0KaF1zTNO3ocWgk6bqk8"/>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-16">
+<!-- Tarzan Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300">
+<div class="h-80 overflow-hidden relative">
+<img alt="Tarzan Production" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Lush green jungle scene with dramatic lighting, evocative of Tarzan musical setting, vibrant foliage and dappled sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbICNqd0E2BgDYaI920hz-D1RVZP-aHTx5SW-rUAj7wNrem0EelhbCRDrl12PbjgM02xmoeRuNU98ubwSQKO8atJyaI376Pb2gknxocMs4kLIrUWgRQ47N8VlBAtQiLXsmUUJo6Adyp1nx_PR9iHaAFh9ZHNy8_52Om0oG782RxmIx4Dq6Zbuk7qlNZ4oIU9Hl1GQkI6-EQY_3gsu0RcyrbEgyXg6Nk4z0rH0e3GY3d9fHSAfhL1-pLTcmQsJIspCcsl5eEXbzsKc"/>
+<div class="absolute top-4 right-4 bg-secondary-fixed-dim/90 backdrop-blur-sm text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-label tracking-wide">
+                        2022 Season
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-low mt-4 rounded-t-xl">
+<h2 class="font-headline text-3xl font-bold text-primary mb-3">Tarzán</h2>
+<p class="font-body text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                        A breathtaking journey into the heart of the jungle. Our production brought the wild to life with innovative staging, soaring aerial choreography, and the unforgettable rhythms of Phil Collins.
+                    </p>
+<button class="self-start text-secondary hover:text-primary transition-colors font-label font-semibold flex items-center gap-2 group">
+                        Explore Gallery
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Peter Pan Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300 mt-0 lg:mt-12">
+<div class="h-80 overflow-hidden relative">
+<img alt="Peter Pan Production" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Starry night sky over a misty landscape, evoking the magical flight to Neverland in Peter Pan, deep blues and ethereal light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ne7ZxZtlcNbFubnwwwzNmeeGhhCNZuXRxe4SmCm4ZEQBGrhn2nKXD01vN2d78ldGM1QSBFwnJcYwvven9oVybahV0UiFUl1jYCn8DFcdj2pOn_wWviDcd184UQQx5Wi-Shvi__3qgNCtmFg0MrHMvCkc-pBK4liw5S2M3nhdzXGuF-YWJl-vClC4-JdfXV__AZSnjgX4BG7zH9CMkVh6Hn3Ojm4kwZXs6GlVqljh7CNv3Omogm_Ht2aJBAUMo2pbeXAqOQBZnyk"/>
+<div class="absolute top-4 right-4 bg-secondary-fixed-dim/90 backdrop-blur-sm text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-label tracking-wide">
+                        2021 Season
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-low mt-4 rounded-t-xl">
+<h2 class="font-headline text-3xl font-bold text-primary mb-3">Peter Pan</h2>
+<p class="font-body text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                        We sprinkled fairy dust over the stage and took flight. A magical, visually stunning retelling of the classic tale that reminded audiences of all ages what it means to believe.
+                    </p>
+<button class="self-start text-secondary hover:text-primary transition-colors font-label font-semibold flex items-center gap-2 group">
+                        Explore Gallery
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Hercules Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300">
+<div class="h-80 overflow-hidden relative">
+<img alt="Hercules Production" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Ancient Greek style ruins bathed in golden hour sunlight, theatrical set design for Hercules, majestic and heroic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWFO5vjKU3tbLNQJWBW-LGUtKtpZTDOKjFDUeXvu1_MEReJ2TFUTgXwyrx-7_7lFfAy-MxddhaJboYhzlVwrdFQOWeFN6fk4iRCis8v58l29tJVyZ5PKfS7Z7hatM0bHV846VCFvH8OU3rS3zD280I9f1-B8GEtip_1q-_FFcgyFb1OnDjLyUv8z8M7RY-EiQIFL7iSHnmW0Ihy_cOyr-tAwIDLat0wf1ancVsATkwZw-y60dFsJsM2YcinLc94uKspiZXgJR7gWM"/>
+<div class="absolute top-4 right-4 bg-secondary-fixed-dim/90 backdrop-blur-sm text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-label tracking-wide">
+                        2019 Season
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-low mt-4 rounded-t-xl">
+<h2 class="font-headline text-3xl font-bold text-primary mb-3">Hércules</h2>
+<p class="font-body text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                        A godly production full of gospel energy and heroic feats. We transformed the proscenium into Mount Olympus, delivering a high-octane performance that went the distance.
+                    </p>
+<button class="self-start text-secondary hover:text-primary transition-colors font-label font-semibold flex items-center gap-2 group">
+                        Explore Gallery
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Greatest Showman Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300 mt-0 lg:mt-12">
+<div class="h-80 overflow-hidden relative">
+<img alt="The Greatest Showman Production" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Vintage circus tent interior with dramatic spotlight beams cutting through smoke, vibrant reds and golds, theatrical spectacle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYIt8RfXWMwmdRwXzIB8pECskEp2icD2Bk2VmCjMFWEkmZsI_HsvzgoElABYMSGVa3ZFZe7KvyCVFWGQJ5ZDnxWlgfRWZ_dkobNtNXZxhPgNC2xvUlHkwZ-5dipL3n4OO67puG2VGDwTt1qK-c-hNsWhV74WL2VgVmU438WyYIWRIHWtuakXyn94BbDUrI_ySiF3OvzB2N6NqUHxJyjWh5Tgq7-yumVtGsVhfdLuSpWjwTUIj_Wsfh-yQkNtSi0MLb1zWbahpH8eI"/>
+<div class="absolute top-4 right-4 bg-secondary-fixed-dim/90 backdrop-blur-sm text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-label tracking-wide">
+                        2018 Season
+                    </div>
+</div>
+<div class="p-8 flex flex-col flex-grow bg-surface-container-low mt-4 rounded-t-xl">
+<h2 class="font-headline text-3xl font-bold text-primary mb-3">The Greatest Showman</h2>
+<p class="font-body text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                        Our most spectacular undertaking. A celebration of humanity and the birth of show business, featuring dazzling costumes, immense chorus numbers, and undeniable theatrical magic.
+                    </p>
+<button class="self-start text-secondary hover:text-primary transition-colors font-label font-semibold flex items-center gap-2 group">
+                        Explore Gallery
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 mt-auto bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+<div class="font-serif text-lg font-semibold text-[#750003] dark:text-[#9e090b]">
+                Ortega Open Music
+            </div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Terms of Service</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Backstage Access</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Press Kit</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all focus:ring-2 focus:ring-[#735c00]" href="#">Contact Us</a>
+</nav>
+<div class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 text-[#750003] dark:text-[#9e090b]">
+                © 2024 Ortega Open Music. The Digital Proscenium.
+            </div>
+</div>
+</footer>
+</body></html>

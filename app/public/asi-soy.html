@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Así Soy | Asociación Open Music</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#410001",
+                      "on-surface": "#1c1b1b",
+                      "secondary-container": "#8ab8ff",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "surface-tint": "#b7211b",
+                      "on-secondary-fixed": "#001b3b",
+                      "on-secondary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-background": "#1c1b1b",
+                      "surface-container-highest": "#e5e2e1",
+                      "secondary": "#2c5fa0",
+                      "on-secondary-container": "#054787",
+                      "surface-dim": "#dcd9d9",
+                      "on-tertiary": "#ffffff",
+                      "background": "#fcf9f8",
+                      "outline": "#8f706b",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "on-primary-fixed-variant": "#930006",
+                      "surface": "#fcf9f8",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#735c00",
+                      "surface-variant": "#e5e2e1",
+                      "secondary-fixed-dim": "#a7c8ff",
+                      "inverse-primary": "#ffb4aa",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#4f3e00",
+                      "secondary-fixed": "#d5e3ff",
+                      "surface-bright": "#fcf9f8",
+                      "primary-container": "#9e090b",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-surface-variant": "#5b403d",
+                      "primary": "#750003",
+                      "tertiary-fixed": "#ffe088",
+                      "surface-container-low": "#f6f3f2",
+                      "primary-fixed": "#ffdad5",
+                      "inverse-surface": "#313030",
+                      "on-primary-container": "#ffa89d",
+                      "outline-variant": "#e3beb9",
+                      "on-secondary-fixed-variant": "#044787",
+                      "inverse-on-surface": "#f3f0ef",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#eae7e7",
+                      "surface-container": "#f0eded",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#cca730"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col pt-[88px] selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-950/70 backdrop-blur-md shadow-sm dark:shadow-none bg-surface-container-low transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="/" class="font-serif text-2xl font-bold tracking-tighter text-[#750003] dark:text-[#fcf9f8] hover:opacity-80 transition-opacity">Asociación Open Music</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight" href="/">Inicio</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight" href="/obras">Obras</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight" href="/comunidad">Comunidad</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight" href="/noticias">Noticias</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow flex flex-col relative">
+
+<!-- Hero Section con el cartel oficial -->
+<section class="relative w-full min-h-[614px] md:min-h-[716px] flex items-end justify-start bg-secondary overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-black/70 to-black/20"></div>
+<img alt="Cartel oficial Así Soy - Villanueva de la Serena" class="absolute inset-0 w-full h-full object-cover object-top z-0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3AdQvUz9Y83X9zve0pKBPlxrchEDiwX4Jwv2rf5t-lODGpZjlNwdGzsQSBr-Smj9ZSK8zoYv94NTL7LY_peW96l6Fz8x_PLPCY9lX1_fx5s2flkiqwsvDbvejtOsi3eu8lTCmXeMQPSZD4Jv91UzJQCYR0Hz413OUqPu6M8-KG_pJuve3ueIVuzYWRIs/s3508/Cartel%20Asi%20Soy%20Final%20villanueva%20(1).png"/>
+<div class="relative z-10 w-full p-8 md:p-16 lg:p-24 bg-gradient-to-t from-background via-background/60 to-transparent">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-tertiary text-on-tertiary rounded-full text-xs font-bold uppercase tracking-widest mb-4 shadow-sm">Temporada 24-25 · Más Reciente</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface mb-4 leading-tight tracking-tight">Así Soy</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant mb-8 max-w-2xl font-medium">Un musical de corazón sobre la diversidad, la identidad y el talento del alumnado del CEIP Ortega y Gasset.</p>
+<div class="flex flex-wrap gap-4">
+<a href="https://www.youtube.com/watch?v=2DhEJegyIU4" target="_blank" class="bg-primary text-on-primary px-8 py-3 rounded-md font-semibold text-lg hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+Ver Vídeo Promocional
+</a>
+<a href="https://www.facebook.com/ortega.open" target="_blank" class="bg-surface-container-highest text-on-surface px-8 py-3 rounded-md font-semibold text-lg hover:bg-surface-dim transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">groups</span>
+Síguenos en Facebook
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Sinopsis Section -->
+<section class="py-20 px-8 md:px-16 lg:px-24 bg-surface-container-low relative">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3 pt-2 hidden md:block">
+<span class="material-symbols-outlined text-6xl text-tertiary mb-6">auto_awesome</span>
+<div class="w-16 h-1 bg-tertiary rounded-full"></div>
+</div>
+<div class="md:w-2/3">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-6">Sobre el Musical</h2>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed text-pretty mb-6">
+<strong>Así Soy</strong> es el nuevo y emocionante musical de la Asociación Open Music del CEIP Ortega y Gasset de Almendralejo. Un espectáculo que celebra la diversidad, la identidad propia y el talento de decenas de alumnos y alumnas que suben al escenario para demostrar que cada uno de ellos es único, especial y lleno de vida.
+</p>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+Con canciones que invitan a la reflexión y a la alegría, coreografías llenas de energía y un mensaje de fondo positivo y emocionante, este ha sido nuestro proyecto más ambicioso hasta la fecha.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Actuaciones Section -->
+<section class="py-20 px-8 md:px-16 lg:px-24 bg-surface relative">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4 text-center">Nuestras Actuaciones</h2>
+<p class="text-center text-on-surface-variant font-body mb-12">Hemos llevado <em>Así Soy</em> a distintos escenarios de Extremadura.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-3 block">theater_comedy</span>
+<p class="text-xs font-bold uppercase tracking-widest text-tertiary mb-1">5 de Abril de 2025</p>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Los Santos de Maimona</h3>
+<p class="font-body text-sm text-on-surface-variant">Teatro Cine Monumental</p>
+</div>
+<div class="bg-primary-container rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-3 block">star</span>
+<p class="text-xs font-bold uppercase tracking-widest text-on-primary-container mb-1">12, 13 y 17 de Mayo 2025</p>
+<h3 class="font-headline text-xl font-bold text-surface mb-2">Almendralejo</h3>
+<p class="font-body text-sm text-surface/80">Teatro Carolina Coronado (Función principal)</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 text-center hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-3 block">location_on</span>
+<p class="text-xs font-bold uppercase tracking-widest text-tertiary mb-1">27 de Marzo de 2026</p>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Plasencia</h3>
+<p class="font-body text-sm text-on-surface-variant">Teatro Alkázar</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Carteles Section -->
+<section class="py-20 px-8 md:px-16 lg:px-24 bg-surface-container-low relative">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-12 text-center">Carteles Oficiales</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+<div class="rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition-transform duration-300">
+<img alt="Cartel Así Soy - Villanueva de la Serena" class="w-full h-auto" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3AdQvUz9Y83X9zve0pKBPlxrchEDiwX4Jwv2rf5t-lODGpZjlNwdGzsQSBr-Smj9ZSK8zoYv94NTL7LY_peW96l6Fz8x_PLPCY9lX1_fx5s2flkiqwsvDbvejtOsi3eu8lTCmXeMQPSZD4Jv91UzJQCYR0Hz413OUqPu6M8-KG_pJuve3ueIVuzYWRIs/w339-h480/Cartel%20Asi%20Soy%20Final%20villanueva%20(1).png"/>
+<p class="text-center text-sm font-body text-on-surface-variant mt-3 pb-3">Villanueva de la Serena</p>
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition-transform duration-300">
+<img alt="Cartel Así Soy - Plasencia 2026" class="w-full h-auto" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieJg7h21N3RMJCr4Ge00y1RzLnjISlDmTfQGz3ZrFB_G_vBObYwUqby2Ax57JxpoQ_8eMOzjv7hUBSLgv8_ZCjLbHaJNNAxuyGenuNaq8KkTAKbU4YcPTK7m2-nAPOJ00_ZbhOGpw9EETXeqIc8Oy3yoP7Ny7954TnapobBlajIZ3hyphenhyphenNsLpooQtdLXUPc/w340-h482/Cartel%20Asi%20Soy%20Final%20Plasencia%202026.png"/>
+<p class="text-center text-sm font-body text-on-surface-variant mt-3 pb-3">Plasencia 2026 - Teatro Alkázar</p>
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition-transform duration-300">
+<img alt="Cartel Así Soy - Almendralejo" class="w-full h-auto" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6zuKuHEw4CtFQYmQTyCnRKkT6Cej3tKP1yAwFpKme_KDZGfWH95nLuuHZJd6FNMT_w5p4-l18Kk4Hd_lug6XaNxR1bMShccZnwYS4-X24b2oEkDQ-kbXU8FQ1V6Ue2trZzue_wZLtbPhqhIENX-GIQUIDBy5q25cTG5Fh-tEiVw4NY7pXyHZWomcSAV0/w276-h391/Cartel%20Asi%20Soy%20Final%20fechas%20almendralejo.png"/>
+<p class="text-center text-sm font-body text-on-surface-variant mt-3 pb-3">Almendralejo - Mayo 2025</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Galería de Fotos Reales -->
+<section class="py-20 px-8 md:px-16 lg:px-24 bg-surface relative">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4 text-center">Galería de Fotos</h2>
+<p class="text-center text-on-surface-variant font-body mb-12">Momentos reales de nuestras actuaciones.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest col-span-2 row-span-2">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKtvZSAgTvnt-WDQgkAVxKB-5YzwpQ2zbnXnRu_qyByXZZN0_n3FZDOHSQdOopvrbs6mfwZ1tbfVhMGZclhjB6uSVqOvwuCJcG9hEFSwVfXhzXkBSwKy-gqAi33_C9QGIWDIFT94D3mGijBo968CPwodUh5-5JApSj8uybQGAtq2Cp-M5jLlJRWIStdSs/s320/WhatsApp%20Image%202025-05-13%20at%2015.21.59.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEUbpC69tolmwbwZfdhbiSWr_giH95ASqw_AWftFId_RhdC9zRyKLBri0yAvY07xjI5L6W3iroaIOW46wJmD83QcGkRJxQX-2dZmtmhuGpBQhPW5lDswwhfFalyziW6B0YeHC4TfyJOI_RDkuNmTpjAbl2IU7_m4DscZX9rPyqaaj8AvIDGU8MUSysAC0/s320/WhatsApp%20Image%202025-05-14%20at%2019.15.04.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs_50yB-MbPvjXLqWOQhf1IikxDuITOzWxm7ak-6jgX5cLvGjqsbQ_7sZZr8JVFsOW0AuY4jr8hI7uR68gUg2QAoCe9_ycTp_Wf3wrzEZauWz1pEeT1StllPEKTZ3Bo2GkgyPT5N6_hYNo5lyqzSNh2YPpSFUR2qbass82Tz3CN4ax-m9fnIE946qRX58/s320/WhatsApp%20Image%202025-05-14%20at%2019.15.07.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNxCyuxyZS5J8MqNFpRzPdIRCIwJQXd1cj3Di3wmFVvcBvgzMBh7DUW1YBrqYqm2bRPRBPRAX0ALdigcMqI02O7vHDJL1dA6BwzMjqxo_jabACMUjwuw9HgkZjIFGVPEfL64YB6J_CsReuTP7Ye1Nj7d1olas0vT79Kk_YL1NQ8hWdaYqjSHuv5pvGUuI/s320/WhatsApp%20Image%202025-05-14%20at%2019.15.11.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsCIbr9MrFqEw4ho4dO16MNssG8H0ycqE4Z_uqv_AoNk_eOUncWigo0BiH9aig-wZnDT1N0caZpA_cKSCHlofdGXvx3vcQw4yFiID7FrseyfKHS5TwSkClcmk3JjY6N1roJunoy5DrKnWZ_4UeBp9RvlQPjUSxl7ClXJGdHvlGnEo3_pZH6uyvcMWaI8U/s320/WhatsApp%20Image%202025-05-14%20at%2019.15.13.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikTdahEY7WRUx9dR8dob8Mf4Zfg5NQNT_wsDMex45DNqY4lW9lsuOSb7kFOGCcTsK4gwhUJtYDTeWyFoK8nUvz9DoE5ns0VPtG50rDUfH0rpaDYWfvAqu1NdLM3RYbFwwOJqBPy96hneRPXGbXnPJIsmQYvjHWUb3OTRJjwxPcxITtlSWKG3MHdxQoiAU/s320/WhatsApp%20Image%202025-05-14%20at%2019.18.05%20(1).jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkd7y995dqMnPLHjtOhuvEfj68_fdbMH0gcbf_IlOGEiVJx0lUVG6vbFh3VHN1NM9Kjj9kQJaJjXM_SSJAz0YBorrtgsRaPJVh7JfukV20ZuZwouZgjpoeio714O_AedjhxDYHT65wENjKmw3PMMHPZgCyoix9MFyqysjxa8rhsH-KPb4rOmSyRpKJzbs/s320/WhatsApp%20Image%202025-05-14%20at%2019.18.05.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjISdIKYVLdgl_J3M6LPAg4VGm1PiflmRTTHSPrl0vBM5FYOYtp989ym0VRQ-wBMVSf1g_h-armGllPG0x0dhBwoLXvzQ3M4z7vHRizmSsannHymdVys7_ykgHqPi6GTDdtgtoMmuUzXWmFqK8tok2Q-7UtoHl3NLqK3SPn9ciWwmhkSGKyx3jI8RYOVLc/s320/WhatsApp%20Image%202025-05-14%20at%2019.18.06.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest col-span-2">
+<img alt="Actuación Así Soy - Los Santos de Maimona" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfB7s5GWFH0_gWDSy3qSyo_N4rYI_QDjem5tQ8JSPsz-kbPFIfJBtOhGQAtygr07VB9v2Brv3SX6c8KHSAwU7dDhzKklbkiQbmUK9MnnTnsblxaeoXoktyoyqxeEEaqgJYIFUPaXoGApZkLDj0523IeeasDwX_BS3qOuQYBN3SvqnJvtZfPPAbe-50crU/w395-h559/los%20santos.jpeg"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest col-span-2">
+<img alt="Actuación Así Soy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMApsSR4pkYxbOwQmKtEtJFE-oHK3aSHGrkBLgAG5SjmqKL2mfA9HbbPVqMIQ0lMi5tmMRpwzBsTVNOxfhD0I_HkGXXnN9gps9q8sDWYKnhXHsZzcMRlK4rOeUxu1GFd0wdDCYcgINE5mHQMspzrj2g9kE5bkvFx4R_CZbqBuYAzPYPsRcsN_HATsl3XY/s320/WhatsApp%20Image%202025-05-17%20at%2012.41.21.jpeg"/>
+</div>
+</div>
+<div class="text-center mt-10">
+<a class="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-container transition-colors" href="https://ortegaopenmusic.blogspot.com/p/asi-soy-24-25.html" target="_blank">
+Ver todas las fotos en el Blog de la Asociación
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+<a href="/" class="font-serif text-lg font-semibold text-[#750003] dark:text-[#9e090b]">Asociación Open Music</a>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all" href="https://www.facebook.com/ortega.open" target="_blank">Facebook Oficial</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all" href="http://cportegaygasset.juntaextremadura.net/" target="_blank">Web del Centro (CEIP Ortega y Gasset)</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all" href="https://ortegaopenmusic.blogspot.com/p/asi-soy-24-25.html" target="_blank">Blog de la Asociación</a>
+<a class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400 hover:text-[#735c00] underline transition-all" href="/noticias">Noticias y Eventos</a>
+</nav>
+<div class="font-sans text-sm tracking-wide text-stone-500 dark:text-stone-400">
+© 2024-2025 Asociación Open Music - CEIP Ortega y Gasset (Almendralejo).
+</div>
+</div>
+</footer>
+</body></html>

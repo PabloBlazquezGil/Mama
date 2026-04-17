@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asociación Open Music - Inicio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fcf9f8",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-secondary-fixed": "#001b3b",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#eae7e7",
+                        "background": "#fcf9f8",
+                        "primary-container": "#9e090b",
+                        "surface": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed": "#ffdad5",
+                        "inverse-primary": "#ffb4aa",
+                        "primary": "#750003",
+                        "secondary-container": "#8ab8ff",
+                        "outline-variant": "#e3beb9",
+                        "secondary": "#2c5fa0",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed": "#ffe088",
+                        "on-primary-fixed-variant": "#930006",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-primary-container": "#ffa89d",
+                        "secondary-fixed": "#d5e3ff",
+                        "inverse-surface": "#313030",
+                        "on-surface": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "outline": "#8f706b",
+                        "on-secondary-container": "#054787",
+                        "on-surface-variant": "#5b403d",
+                        "on-secondary-fixed-variant": "#044787",
+                        "surface-tint": "#b7211b",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "tertiary": "#735c00",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "tertiary-container": "#cca730",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container": "#f0eded",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#410001"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-950/70 backdrop-blur-md shadow-sm dark:shadow-none bg-surface-container-low transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="/" class="font-serif text-2xl font-bold tracking-tighter text-[#750003] dark:text-[#fcf9f8] hover:opacity-80 transition-opacity">Asociación Open Music</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="/">Inicio</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="/obras">Obras</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="/comunidad">Comunidad</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#750003] transition-colors font-sans tracking-tight hover:text-[#735c00] transition-all duration-300" href="/noticias">Noticias</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-16">
+<!-- Hero Section: Así Soy -->
+<section class="relative w-full h-[870px] min-h-[600px] flex items-center justify-center overflow-hidden bg-surface-container-low mb-24">
+<div class="absolute inset-0 z-0">
+<img alt="Así Soy - Musical Asociación Open Music Almendralejo" class="w-full h-full object-cover object-center" src="https://blogger.googleusercontent.com/img/a/AVvXsEjwebU_uwaG9zy9GJ9TYZEY6SNlbFiWcNwuROeRQ60j11o_n2mrVFb0240CzZenXaU3AU5bLPG1k0rvu0a8OK8ifeuWGbNpTwCI6PsfEj5VxVzUWgrvuGtEXQ1AHgwMrbqCQhTsADZe4lsPjo6qG72eEK3qCdL8X5cNepk9QJkORD78p1Sr1Ow7GQYMXYE=s216"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20 z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/30 to-transparent z-10"></div>
+</div>
+<div class="relative z-20 max-w-5xl mx-auto px-6 text-center space-y-8 mt-16">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/80 backdrop-blur-md text-white text-sm font-semibold uppercase tracking-widest border border-white/20">
+                    ✦ En Cartelera · Temporada 2025-26
+                </span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white drop-shadow-2xl leading-tight">
+                    Así Soy
+                </h1>
+<p class="font-body text-lg md:text-xl text-white/90 drop-shadow-md max-w-2xl mx-auto font-medium leading-relaxed">
+                    Nuestro musical más reciente: un viaje de autoconocimiento y valentía representado en Almendralejo, Plasencia y Villanueva de la Serena. Música, danza y emoción en estado puro.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+<a href="https://www.youtube.com/watch?v=2DhEJegyIU4" target="_blank" class="inline-block bg-primary text-on-primary text-center rounded-md px-8 py-3.5 text-base font-semibold hover:bg-primary-container hover:shadow-[0_8px_32px_rgba(117,0,3,0.3)] transition-all duration-300 w-full sm:w-auto">Ver Vídeo Promocional 25-26</a>
+<a href="/asi-soy" class="bg-white/15 backdrop-blur-md text-white border border-white/30 rounded-md px-8 py-3.5 text-base font-semibold hover:bg-white/25 transition-all duration-300 w-full sm:w-auto text-center">
+                        Ver Página del Musical
+                    </a>
+</div>
+</div>
+</section>
+<!-- Nuestra Historia Section -->
+<section class="max-w-7xl mx-auto px-6 py-24 bg-surface-container-low rounded-3xl mb-24 transition-colors">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-4">Nuestra Historia</h2>
+<p class="font-body text-lg text-on-surface-variant">Desde el dosel de la selva hasta el País de Nunca Jamás, explora los mundos a los que hemos dado vida.</p>
+</div>
+<a href="/obras" class="text-primary font-semibold flex items-center gap-2 hover:text-tertiary transition-colors group">
+                    Ver Todo
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: Entre Lianas (Tarzán) -->
+<a href="/tarzan" class="group relative bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_32px_64px_-12px_rgba(28,27,27,0.1)] ring-1 ring-outline-variant/15 block">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Entre Lianas - Tarzán - Asociación Open Music" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF3mIVxJuHC2cZB8GfMqzZJAA-Ll01cBdWwdHjxI9L4mVXgU6Y5qJtBXz2OXiG2_7UHpXxINIePQwuT-xAyI8HJjMmC2aTCXHcXi5zXqVPdcPDfYLYFhgUuyoL3KOsexumT3mXQdxf7w/s320/foto+grupo.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4"><span class="bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">Temporada 2021-23</span></div>
+</div>
+<div class="p-6 relative z-10 bg-surface-container-lowest">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary mb-2 block">Segundo Musical</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Entre Lianas</h3>
+<p class="font-body text-sm text-on-surface-variant">Nuestra versión del clásico Tarzán. Dos temporadas de actuaciones en Extremadura.</p>
+</div>
+</a>
+<!-- Card 2: Peter Pan -->
+<a href="/peter-pan" class="group relative bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_32px_64px_-12px_rgba(28,27,27,0.1)] ring-1 ring-outline-variant/15 block">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Peter Pan - Musical Asociación Open Music" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNK7jxsharkjBVz6-0GdOG1w_PlSUe5dmTbB9a-LArcrnGJ5NJockhfTjZ0utZZJsQL8R3hwIcSPFv0kVgKWYa5l2d_fpFFwtiqd59vwzN30UT08jqd3_u67CvboqYbfdpQXeJTp6Gwrg/s320/DSC_0122.JPG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4"><span class="bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">Temporada 2014-15</span></div>
+</div>
+<div class="p-6 relative z-10 bg-surface-container-lowest">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary mb-2 block">Primer Musical</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Peter Pan</h3>
+<p class="font-body text-sm text-on-surface-variant">El musical que lo inició todo. 5 vídeos, tres escenarios y cobertura en prensa y televisión.</p>
+</div>
+</a>
+<!-- Card 3: Hércules -->
+<a href="/hercules" class="group relative bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_32px_64px_-12px_rgba(28,27,27,0.1)] ring-1 ring-outline-variant/15 block">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img alt="Hércules 2018 - Musical Asociación Open Music" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwHNhW9KoSDlLCrgG5FOQxXk9lLdOstqlvcQwaek_jt8oLB8hC0cI1y0qV_aHsXSHQJxCupVRqtCeaKO3RfgheAFM0UAdjOiqb8qnMclsDsZCx9FrJmlspSEKp575laEIsQpT5BEuA8lk/s320/IMG-20180424-WA0004.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4"><span class="bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">Temporada 2017-18</span></div>
+</div>
+<div class="p-6 relative z-10 bg-surface-container-lowest">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary mb-2 block">Tercer Musical</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Hércules</h3>
+<p class="font-body text-sm text-on-surface-variant">El héroe que conquistó tres escenarios: Almendralejo, Plasencia y Arroyo de la Luz.</p>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 transition-colors">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-7xl mx-auto">
+<a href="/" class="font-headline text-lg font-semibold text-[#750003]">Asociación Open Music</a>
+<div class="flex flex-wrap justify-center gap-6 font-body text-sm tracking-wide">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] hover:underline transition-all focus:ring-2 focus:ring-[#735c00] rounded-sm px-1" href="/">Términos de Servicio</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] hover:underline transition-all focus:ring-2 focus:ring-[#735c00] rounded-sm px-1" href="/" href="https://www.facebook.com/ortega.open" target="_blank">Facebook Oficial</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] hover:underline transition-all focus:ring-2 focus:ring-[#735c00] rounded-sm px-1" href="/">Acceso Entre Bastidores</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] hover:underline transition-all focus:ring-2 focus:ring-[#735c00] rounded-sm px-1" href="/" href="http://cportegaygasset.juntaextremadura.net/" target="_blank">Web del Centro (CEIP Ortega y Gasset)</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#735c00] hover:underline transition-all focus:ring-2 focus:ring-[#735c00] rounded-sm px-1" href="/">Contacto</a>
+</div>
+<div class="font-body text-sm tracking-wide text-stone-500 dark:text-stone-400 text-center md:text-right">
+                © 2024-2025 Asociación Open Music - CEIP Ortega y Gasset (Almendralejo).
+            </div>
+</div>
+</footer>
+</body></html>

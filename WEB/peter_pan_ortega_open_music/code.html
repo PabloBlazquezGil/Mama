@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Peter Pan | Ortega Open Music</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#410001",
+                      "on-surface": "#1c1b1b",
+                      "secondary-container": "#8ab8ff",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "surface-tint": "#b7211b",
+                      "on-secondary-fixed": "#001b3b",
+                      "on-secondary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-background": "#1c1b1b",
+                      "surface-container-highest": "#e5e2e1",
+                      "secondary": "#2c5fa0",
+                      "on-secondary-container": "#054787",
+                      "surface-dim": "#dcd9d9",
+                      "on-tertiary": "#ffffff",
+                      "background": "#fcf9f8",
+                      "outline": "#8f706b",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "on-primary-fixed-variant": "#930006",
+                      "surface": "#fcf9f8",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#735c00",
+                      "surface-variant": "#e5e2e1",
+                      "secondary-fixed-dim": "#a7c8ff",
+                      "inverse-primary": "#ffb4aa",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#4f3e00",
+                      "secondary-fixed": "#d5e3ff",
+                      "surface-bright": "#fcf9f8",
+                      "primary-container": "#9e090b",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-surface-variant": "#5b403d",
+                      "primary": "#750003",
+                      "tertiary-fixed": "#ffe088",
+                      "surface-container-low": "#f6f3f2",
+                      "primary-fixed": "#ffdad5",
+                      "inverse-surface": "#313030",
+                      "on-primary-container": "#ffa89d",
+                      "outline-variant": "#e3beb9",
+                      "on-secondary-fixed-variant": "#044787",
+                      "inverse-on-surface": "#f3f0ef",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#eae7e7",
+                      "surface-container": "#f0eded",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#cca730"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Noto Serif"
+                      ],
+                      "body": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label": [
+                              "Plus Jakarta Sans"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col pt-[88px] selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto font-serif text-lg tracking-tight">
+<a class="font-serif text-2xl font-bold italic text-red-900 dark:text-red-100 flex-shrink-0" href="#">Ortega Open Music</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-red-900 dark:text-red-400 border-b-2 border-red-900 pb-1 hover:text-red-700 transition-colors scale-95 active" href="#">Productions</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors scale-95 active" href="#">Rehearsals</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors scale-95 active" href="#">Tickets</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors scale-95 active" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-red-800 dark:text-red-500 hover:bg-surface-variant rounded-full p-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-md font-semibold hover:bg-primary-container transition-colors shadow-sm" href="#">Support Us</a>
+<button class="md:hidden text-red-800 dark:text-red-500 hover:bg-surface-variant rounded-full p-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col md:flex-row relative">
+<!-- SideNav (Semantic Shell) -->
+<aside class="hidden md:flex bg-zinc-50 dark:bg-zinc-900 h-screen w-64 fixed left-0 top-[88px] flex-col py-6 shadow-sm dark:shadow-none font-sans text-sm z-40 overflow-y-auto">
+<div class="px-6 mb-8 flex flex-col gap-2">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary font-serif font-bold text-xl overflow-hidden mb-2 shadow-sm">
+<img alt="Production Icon" class="w-full h-full object-cover" data-alt="magical glowing star over silhouetted london skyline in deep blue night sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByCQCLAVW0qM2ulkuWx07NZbQ8X9vlEwK3ziuWTL4j5leTov0HKIDG1RGk9fD7VSVIMauXFV9azfi9pyx6HpUCyjZt9R97F0l7KfnA3SJZ4mKeZOtL67BkyVx_-m5QOq7hsFM83br10JbkGUmyXAbkZrghReI0kYV8vLRjyG1E-23sIngcXO5gQBa8TGL1AiDh0KMVauPGHHd7ypl2JFhcJh2HXX6cg1yNa1XATERAln7tJXwE5C_sKw_kbkjdWm_2M4W10geBamg"/>
+</div>
+<h2 class="font-serif font-bold text-red-900 text-lg leading-tight">Current Playbill</h2>
+<p class="text-xs text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Digital Proscenium</p>
+</div>
+<nav class="flex flex-col gap-1 px-4">
+<a class="flex items-center gap-4 px-4 py-3 rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="groups">groups</span>
+<span>Cast &amp; Crew</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-md bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-100 font-semibold transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="menu_book">menu_book</span>
+<span>Synopsis</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="photo_library">photo_library</span>
+<span>Gallery</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-md text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="theater_comedy">theater_comedy</span>
+<span>Behind the Scenes</span>
+</a>
+</nav>
+</aside>
+<!-- Dynamic Stage Content -->
+<div class="flex-grow md:ml-64 w-full max-w-7xl mx-auto bg-surface relative z-10 shadow-[-10px_0_30px_rgba(0,0,0,0.02)]">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[614px] md:min-h-[716px] flex items-end justify-start bg-secondary overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-secondary to-secondary-container opacity-80"></div>
+<img alt="Peter Pan Hero" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 z-0" data-alt="magical silhouetted figures flying against a large glowing clock face in starry night sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUwD3LzmSOREX6RYiFYXw6S_cuj5N4Ii7z5vCAMQ6EbRzVd5yYgg1sri1Lbgd6w4u0fwewAMu2N2TIGEdjMKQJJ1uKVz49VPaCMJCvVY5oxjG71Aq919ygTnKq2lKp8XiEqBINoRCOExjtyYfshXNGJlrdtP6F8tgnBoD393u7NQSuD34Uyosvw3CtZD9fR8WzB1Rin3GpbFiBHjOhLK_z528zzG7mbfPHPx_DwwwxfrJACJ36tQUQTBnTvKhmSWXh_-KcXX5iV4I"/>
+<div class="relative z-10 w-full p-8 md:p-16 lg:p-24 bg-gradient-to-t from-background via-background/80 to-transparent">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-tertiary text-on-tertiary rounded-full text-xs font-bold uppercase tracking-widest mb-4 shadow-sm">2021 Season</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-on-surface mb-4 leading-tight tracking-tight text-balance">Peter Pan</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant mb-8 max-w-2xl font-medium">A magical journey to Neverland.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-semibold text-lg hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+                                Buy Tickets
+                            </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-3 rounded-md font-semibold text-lg hover:bg-surface-dim transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                                Watch Trailer
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Synopsis Section -->
+<section class="py-24 px-8 md:px-16 lg:px-24 bg-surface-container-low relative">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-start">
+<div class="md:w-1/3 pt-2 hidden md:block">
+<span class="material-symbols-outlined text-6xl text-tertiary mb-6" data-icon="auto_awesome">auto_awesome</span>
+<div class="w-16 h-1 bg-tertiary rounded-full"></div>
+</div>
+<div class="md:w-2/3">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-6">Synopsis</h2>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed text-pretty">
+                            We sprinkled fairy dust over the stage and took flight. A magical, visually stunning retelling of the classic tale that reminded audiences of all ages what it means to believe.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Production Details Bento Grid -->
+<section class="py-24 px-8 md:px-16 lg:px-24 bg-surface relative">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-12 text-center">Behind the Magic</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-min">
+<!-- The Flying Team Card -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent z-0"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<h3 class="font-headline text-2xl font-bold text-secondary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="flight">flight</span>
+                                        The Flying Team
+                                    </h3>
+<p class="font-body text-on-surface-variant mb-6 text-balance">
+                                        Mastering the aerial choreography required months of intensive rigging training, blending technical precision with artistic grace.
+                                    </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-fixed-dim text-on-secondary-container rounded-full text-xs font-semibold">Rigging Specialists</span>
+<span class="px-3 py-1 bg-secondary-fixed-dim text-on-secondary-container rounded-full text-xs font-semibold">Aerial Choreographers</span>
+</div>
+</div>
+</div>
+<!-- Costume Magic Card -->
+<div class="bg-surface-container-highest rounded-xl p-8 flex flex-col items-center justify-center text-center shadow-inner group transition-transform hover:-translate-y-1">
+<div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="checkroom">checkroom</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Costume Magic</h3>
+<p class="font-body text-sm text-on-surface-variant">Over 150 handcrafted pieces blending Victorian London with Neverland whimsy.</p>
+</div>
+<!-- Image Feature -->
+<div class="md:col-span-3 rounded-xl overflow-hidden h-64 md:h-96 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<img alt="Stage Lighting" class="w-full h-full object-cover" data-alt="dramatic theatrical stage lighting casting blue and gold beams through theatrical fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2gbgvlPYBPvJ5tcjJZDlbcLNDvT_1EDmZvABrZV_rvMpuU5imA6l1PmSmdkkkdyx-t6ZsKNAd2aW9xFMj0MtXuGChlyhHxKjSODiBL8zvx6qCVJ3Wx1ZCr_NFaQ1JOz2y-7bQvi0sNCN408yuc-aWhSUCEHGF-n3MHWr1zqqs834yJtcBsnbwaxx4reIyGBI_JBIvpcFEK-ExyldfHI9XQipnOk1aZFYonADGoZmXnEEGtwWK04vuh1fmsBeivJht6qIZCHj3RMU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex items-end p-8">
+<p class="font-headline text-white text-2xl font-bold">Setting the Stage</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery of Dreams Section -->
+<section class="py-24 px-8 md:px-16 lg:px-24 bg-surface-container-low relative">
+<div class="max-w-6xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">Gallery of Dreams</h2>
+<a class="text-primary font-semibold hover:text-primary-container transition-colors flex items-center gap-1" href="#">
+                            View All <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Gallery Image 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="vibrant stage performance with actors in elaborate costumes under bright theatrical spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeWJsWf33z4INBJKrkI1ghVcXMGtTrWMmVMJJ8C29RCcCrnvqcApltEqt3BYgwhy87Z6hiKv3Wb1dv-AYL_TmVUALrqL3MArrweptHtmfgKFd-n7U6GMb3RdjctaFSXaVJm5RiX2qHWJCbmAs9R82qOHXevmOw8As7nbkCV2rHIB8uFvp7qRIFfGRkgED4MzOU6XkiIqZBcDq7TA1d-MkdjieOegJSTZfjTfeYE0n2ybklelabn8D-vXAqPklS-foMGV0P1nmWvv8"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest md:col-span-2 md:row-span-2">
+<img alt="Gallery Image 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="actor suspended in mid-air on stage harness looking joyful theatrical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqxBeGnEqbXjUtOm1QNTdc6e2AP-zW2qwBW-G5UOcIB_HtT40FS6_YQFzDZ7TG88CmXYz0biif44gNI49iF8cm7dKOV1NJn2g91p56oFExnPNps6_4T3NoIrp20raTjV-bIVDdG6qMd3CW2hi0uZmJaOx33cLWO7KDj4F1P0stfcSM39d-16f39Byf3_Y4VCrWoVldI3VUvI5XbzDsd_haJjmg8kksoykfxIphb4CHqcFCHdidjCOg4OEt40Ve7ZNLdgTvN0N3yvA"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Gallery Image 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="close up of ornate prop compass glowing softly on dark textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSAlCZxd1wDqdE9scrLZMqPowp_oLa8jeNTKa83tnjfakK5Ao3RMDqQKX1k_MeGfY-kRpDr_VNkrjqzpbFoyxfM2hQW2WVHb5wU0d5hF1O-mjcbS8vTScrID07AAXbl8x1pMkJ0NqK5TJwcf6UfWny31MDIdech-1lTQR_pozpSzBdNkNyj8FcEsscXZwFd-tV1s3UmEA9ogSADH9kn-RQf5ObivuWMEOheDcW7yiGn_f1psx26uHFJkMzhnvfTo6NsI7oCkyQfYM"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Gallery Image 4" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="group of actors in colorful costumes holding hands bowing on stage to audience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh0MNojcKpsDaJ0-XWuqHYS1NRGGChi5OUaILoWtdKe-y1ozSbnTUscc2p8x_H5IDgWCuYxpmKD2FV6hynCrWX1e314NaFdbSzUPQ1_PLkOBZV_nBlbvIM8Fv1AwS9fG3kMgvO-Iy1FQc0v6VFBWswf5HIhTiZDIZAqydNa_UizcmVM8l6aX-NPVSWJZ-bhAqfk5M1T8Ifji0Y-E33e_UMFXFgaNodYRW6MG6V576WuQcGY-TWkgYcSoycrDXPjAXtXb91gH5or6s"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Gallery Image 5" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="silhouette of pirate ship mast against deep blue stylized theatrical backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-YUBUkDVqrK5iXXqUqo6oyqBmZ1uecS8tLtUO8BXtTzF21B1zVmkkVeYA4f7vINuiLKCYmWKPk6Ub_hfWg11vzyGD1trj34uzVgP4jPXUe-X26EHqNXIrWx0GJz0GfTOe7cI2pDbj7lJn72SWpctkh0xILz4rBveTVtnueLFt7V9V9di38lNrkLQUUPg9jB6KDMH5Xgcmg-ugNMEHLyCqaSpj5i8xK22VtHg0tvOKh1OmLU5R37ZCgAhowb0n_DeLU8tA8EYVmbE"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-12 mt-auto bg-zinc-100 dark:bg-zinc-950 text-red-800 dark:text-red-500 font-sans text-xs uppercase tracking-widest flex flex-col md:flex-row justify-between items-center px-12 border-t border-zinc-200/50 z-50 relative md:ml-64">
+<div class="font-serif text-xl text-red-900 mb-6 md:mb-0 normal-case tracking-normal">Ortega Open Music</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8 mb-6 md:mb-0">
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Press Kit</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+<div class="text-zinc-500 dark:text-zinc-500 text-center md:text-right normal-case tracking-normal">
+            © 2024 Ortega Open Music Association. The Stage is Set.
+        </div>
+</footer>
+</body></html>
